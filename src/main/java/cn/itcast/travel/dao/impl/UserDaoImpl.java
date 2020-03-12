@@ -16,15 +16,15 @@ public class UserDaoImpl implements UserDao {
         User user = null;
         try {
             // 1.定义sql语句
-            String sql = "SELECT * FROM tab_user WHERE username = ？";
-            // 2.执行sql
-            user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username);
-        } catch (DataAccessException e) {
+            String sql = "SELECT * FROM tab_user WHERE username = ?";
+    // 2.执行sql
+    user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username);
+} catch (DataAccessException e) {
         }
         return user;
-    }
+        }
 
-    @Override
+@Override
     public void save(User user) {
         // 1.定义sql语句
         String sql = "INSERT INTO tab_user(username,password,name,birthday,sex,telephone,email) values(?,?,?,?,?,?,?)";
