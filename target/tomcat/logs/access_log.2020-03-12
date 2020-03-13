@@ -435,3 +435,6 @@
 0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:20:56 +0800] "POST /travel/registUserServlet HTTP/1.1" 200 55 http-bio-80-exec-8 159
 0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:21:16 +0800] "POST /travel/registUserServlet HTTP/1.1" 200 41 http-bio-80-exec-7 21123
 0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:23:13 +0800] "GET /travel/activeUserServlet?code=743ebae94cf94b2ea778ffabfa522ddf HTTP/1.1" 500 5299 http-bio-80-exec-1 573
+0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:25:34 +0800] "GET /travel/activeUserServlet?code=743ebae94cf94b2ea778ffabfa522ddf HTTP/1.1" 200 47 http-bio-80-exec-2 562
+0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:25:37 +0800] "GET /travel/js/angular.min.js HTTP/1.1" 404 999 http-bio-80-exec-3 3
+0:0:0:0:0:0:0:1 - - [12/Mar/2020:21:25:37 +0800] "GET /travel/checkCode HTTP/1.1" 200 375 http-bio-80-exec-1 368

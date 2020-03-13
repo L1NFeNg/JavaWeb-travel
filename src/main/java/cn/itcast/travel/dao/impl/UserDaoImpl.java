@@ -66,4 +66,23 @@ public class UserDaoImpl implements UserDao {
         String sql = "UPDATE tab_user SET status = 'Y' WHERE uid=?";
         template.update(sql, user.getUid());
     }
+
+    /**
+     * 根据用户名和密码查询的方法
+     * @param username
+     * @param password
+     * @return
+     */
+    @Override
+    public User findByUsernameAndPassword(String username, String password) {
+        User user = null;
+        try {
+            // 1.定义sql语句
+            String sql = "SELECT * FROM tab_user WHERE username = ? AND password = ?";
+            // 2.执行sql
+            user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
+        } catch (DataAccessException e) {
+        }
+        return user;
+    }
 }
