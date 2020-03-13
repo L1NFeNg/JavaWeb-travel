@@ -66,10 +66,8 @@ public final class MailUtils {
         return false;
     }
 
-    public static void main(String[] args) throws Exception { // 做测试用
-        MailUtils.sendMail("17858379167@163.com", "你好，这是一封测试邮件，无需回复。", "测试邮件");
-        System.out.println("发送成功");
-    }
-
-
+//    public static void main(String[] args) throws Exception { // 做测试用
+//        MailUtils.sendMail("17858379167@163.com", "你好，这是一封测试邮件，无需回复。", "测试邮件");
+//        System.out.println("发送成功");
+//    }
 }

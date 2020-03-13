@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4932a91d-5a51-41c6-a056-26a33258e599" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/ExitServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/MailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/ActiveUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/ExitServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/FindUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/RegistUserServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-13" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-13" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +40,7 @@
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="9" />
-    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+    <option name="vmOptions" value="-Dfile.encoding=utf-8" />
   </component>
   <component name="ProjectId" id="1Z122Eyman6p2jyj1N5okGZxrNA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -43,9 +56,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itcast.travel.web.servlet" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\travel\src\main\java\cn\itcast\travel\web\filter" />
     </key>
@@ -164,7 +180,7 @@
       <workItem from="1583992077023" duration="24104000" />
       <workItem from="1584022199360" duration="12000" />
       <workItem from="1584041132968" duration="651000" />
-      <workItem from="1584078831359" duration="11335000" />
+      <workItem from="1584078831359" duration="15723000" />
     </task>
     <servers />
   </component>
@@ -202,22 +218,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="335" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583993439961" />
-    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1584090794310">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1584097978814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794310" />
-    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1584090794309">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584097978814" />
+    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1584097978813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794309" />
-    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1584090794309">
+    <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584097978813" />
+    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1584097978813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794309" />
-    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1584090794310">
+    <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584097978813" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1584097978814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794310" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584097978813" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584020534455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,13 +250,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584020534455" />
-    <state x="560" y="222" key="SettingsEditor" timestamp="1583992976851">
+    <state x="560" y="222" key="SettingsEditor" timestamp="1584092987924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="222" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583992976851" />
+    <state x="560" y="222" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584092987924" />
     <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584090828653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090828653" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1584097807629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584097807629" />
   </component>
 </project>

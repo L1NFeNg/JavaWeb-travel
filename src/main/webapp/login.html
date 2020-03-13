@@ -23,7 +23,7 @@
             // 1.给登录按钮绑定单击事件
             $("#btn_sub").click(function () {
                 // 2.发送ajax请求，提交表单数据
-                $.post("loginServlet", $("#loginForm").serialize(), function (data) {
+                $.post("user/login", $("#loginForm").serialize(), function (data) {
                     // {"flag":false,"data":null,"errorMsg":"用户名或密码错误"}
                     // 3.处理响应结果
 
