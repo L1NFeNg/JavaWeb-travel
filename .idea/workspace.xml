@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4932a91d-5a51-41c6-a056-26a33258e599" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/FindUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/ExitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/MailUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/Md5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/Md5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/UuidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/util/UuidUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/MailUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/MailUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/MailUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/MailUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/Md5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/Md5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/UuidUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/util/UuidUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-12" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-13" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-13" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="9" />
@@ -183,7 +164,7 @@
       <workItem from="1583992077023" duration="24104000" />
       <workItem from="1584022199360" duration="12000" />
       <workItem from="1584041132968" duration="651000" />
-      <workItem from="1584078831359" duration="8435000" />
+      <workItem from="1584078831359" duration="11335000" />
     </task>
     <servers />
   </component>
@@ -221,22 +202,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="335" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583993439961" />
-    <state width="1877" height="425" key="GridCell.Tab.0.bottom" timestamp="1584087209365">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1584090794310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="425" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584087209365" />
-    <state width="1877" height="425" key="GridCell.Tab.0.center" timestamp="1584087209364">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794310" />
+    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1584090794309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="425" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584087209364" />
-    <state width="1877" height="425" key="GridCell.Tab.0.left" timestamp="1584087209364">
+    <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794309" />
+    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1584090794309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="425" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584087209364" />
-    <state width="1877" height="425" key="GridCell.Tab.0.right" timestamp="1584087209365">
+    <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794309" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1584090794310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="425" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584087209365" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584090794310" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584020534455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,5 +238,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="560" y="222" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583992976851" />
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584090828653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584090828653" />
   </component>
 </project>
