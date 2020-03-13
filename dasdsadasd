@@ -1,0 +1,35 @@
+[33mcommit 3bdc3af1021f7d9196409ba36bb2912de71bf6f0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: lf <332373135@qq.com>
+Date:   Fri Mar 13 19:14:49 2020 +0800
+
+    优化UserServlet
+
+[33mcommit 57ab6a15f3136a868cb7d6213fe5a684c0dcf91a[m
+Author: lf <332373135@qq.com>
+Date:   Fri Mar 13 17:15:04 2020 +0800
+
+    用户退出
+
+[33mcommit a15cfa57984b9d92e2e7dda089c6997555345443[m
+Author: lf <332373135@qq.com>
+Date:   Fri Mar 13 16:25:07 2020 +0800
+
+    用户登录和姓名显示已完成
+
+[33mcommit 0c024dc121334f40f3032b0845f86dc944564120[m
+Author: lf <332373135@qq.com>
+Date:   Thu Mar 12 21:30:37 2020 +0800
+
+    邮件激活已完成
+
+[33mcommit 10e53dd7f15dd74f47dda52f861984ca809e8b77[m
+Author: lf <332373135@qq.com>
+Date:   Thu Mar 12 19:39:47 2020 +0800
+
+    注册页面前后端逻辑，验证码
+
+[33mcommit 628aa064df6290612c41bde19d8f3f845701dc7b[m
+Author: lf <332373135@qq.com>
+Date:   Thu Mar 12 16:54:14 2020 +0800
+
+    注册页面异步请求前的前端逻辑，注册用户添加到数据库中的功能

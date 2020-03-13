@@ -23,10 +23,6 @@ public class UserServlet extends BaseServlet {
 
     /**
      * 用户注册
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
      */
     public void regist(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 验证码的校验
@@ -55,9 +51,7 @@ public class UserServlet extends BaseServlet {
         User user = new User();
         try {
             BeanUtils.populate(user, map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
         // 3.调用service的regist接受user对象完成注册操作
@@ -84,10 +78,6 @@ public class UserServlet extends BaseServlet {
 
     /**
      * 用户激活
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
      */
     public void active(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1.获取激活码
@@ -112,10 +102,6 @@ public class UserServlet extends BaseServlet {
 
     /**
      * 用户登录
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
      */
     public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1.获取用户名和密码数据
@@ -124,9 +110,7 @@ public class UserServlet extends BaseServlet {
         User user = new User();
         try {
             BeanUtils.populate(user, map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
         // 3.调用Service查询
@@ -150,35 +134,23 @@ public class UserServlet extends BaseServlet {
             info.setFlag(true);
             request.getSession().setAttribute("user", u);
         }
-        // 响应数据
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(), info);
+        // 响应数据，将序列化的json写回客户端
+        writeValue(info,response);
     }
 
     /**
      * 查找一个用户
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
      */
     public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 从session中获取登录用户
         User user = (User) request.getSession().getAttribute("user");
         // Test:System.out.println(user.toString());
         // 将user写回客户端
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(), user);
+        writeValue(user,response);
     }
 
     /**
      * 用户退出
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
      */
     public void exit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 销毁session
