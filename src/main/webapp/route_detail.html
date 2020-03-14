@@ -40,9 +40,7 @@
             <div class="pros_price">
                 <p class="price"><strong id="price">¥2699.00</strong><span>起</span></p>
                 <p class="collect">
-                    <a class="btn" id="favorite"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
-
-                    <!--                    <a class="btn already" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>-->
+                    <a class="btn" id="favorite" onclick="addFavorite()"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
                     <span id="favoriteCount">已收藏100次</span>
                 </p>
             </div>
@@ -196,14 +194,35 @@
                 // 用户已经收藏过
                 // <a class="btn already" disabled="disabled">
                 // 设置收藏按钮的样式
-                alert("已经收藏")
                 $("#favorite").addClass("already");
-                $("#favorite").prop("disabled", disabled);
+                $("#favorite").attr("disabled", "disabled");
+
+                // 删除按钮的点击事件
+                $("#favorite").removeAttr("onclick");
             } else {
                 // 用户没有收藏
             }
         });
     });
+
+    // 收藏按钮的点击事件
+    function addFavorite() {
+        let rid = getParameter("rid");
+        // 1.   判断用户是否登录
+        $.get("user/findOne",{},function (user) {
+            if (user){
+                // 用户已登录,添加功能
+                $.get("route/addFavorite",{rid:rid},function () {
+                    location.reload();
+                    // TODO：发送异步请求实现
+                });
+            }else {
+                // 用户没有登录
+                alert("您尚未登录！");
+                location.href="http://localhost/travel/login.html";
+            }
+        });
+    };
 </script>
 </body>
 </html>

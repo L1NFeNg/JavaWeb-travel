@@ -7,6 +7,8 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.Date;
+
 public class FavoriteDaoImpl implements FavoriteDao {
 
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
@@ -18,7 +20,6 @@ public class FavoriteDaoImpl implements FavoriteDao {
             String sql = " SELECT * FROM tab_favorite WHERE rid = ? AND uid = ? ";
             favorite = template.queryForObject(sql, new BeanPropertyRowMapper<Favorite>(Favorite.class), rid, uid);
         } catch (DataAccessException e) {
-            System.out.println("Dao:未查询到");
         }
         return favorite;
     }
@@ -27,5 +28,14 @@ public class FavoriteDaoImpl implements FavoriteDao {
     public int findCountByRid(int rid) {
         String sql = "SELECT COUNT(*) FROM tab_favorite WHERE rid = ?;";
         return template.queryForObject(sql,Integer.class,rid);
+    }
+
+    /**
+     * 添加收藏
+     */
+    @Override
+    public void add(int rid, int uid) {
+        String sql = "INSERT INTO tab_favorite VALUES (?,?,?)";
+        template.update(sql,rid,new Date(),uid);
     }
 }

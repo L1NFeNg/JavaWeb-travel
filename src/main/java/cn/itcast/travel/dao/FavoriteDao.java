@@ -12,4 +12,6 @@ public interface FavoriteDao {
      * 根据rid查询收藏次数
      */
     int findCountByRid(int rid);
+
+    void add(int rid, int uid);
 }

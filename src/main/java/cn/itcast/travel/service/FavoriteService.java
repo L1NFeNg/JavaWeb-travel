@@ -7,5 +7,13 @@ public interface FavoriteService {
      * @param uid 当前登录的用户名称
      * @return bool
      */
+
     public boolean isFavorite(String rid, int uid);
+
+    /**
+     * 添加收藏
+     * @param rid 路线名称
+     * @param uid 当前登录的用户名称
+     */
+    void add(String rid, int uid);
 }
