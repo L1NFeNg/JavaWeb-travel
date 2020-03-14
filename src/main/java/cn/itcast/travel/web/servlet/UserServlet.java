@@ -135,7 +135,7 @@ public class UserServlet extends BaseServlet {
             request.getSession().setAttribute("user", u);
         }
         // 响应数据，将序列化的json写回客户端
-        writeValue(info,response);
+        writeValue(info, response);
     }
 
     /**
@@ -146,7 +146,7 @@ public class UserServlet extends BaseServlet {
         User user = (User) request.getSession().getAttribute("user");
         // Test:System.out.println(user.toString());
         // 将user写回客户端
-        writeValue(user,response);
+        writeValue(user, response);
     }
 
     /**

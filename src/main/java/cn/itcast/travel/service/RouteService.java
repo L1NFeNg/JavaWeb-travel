@@ -11,15 +11,15 @@ public interface RouteService {
      * @param currentPage 当前页面
      * @param pageSize    每页显示条数
      * @param rname       查询名词
-     * @return 页面类
+     * @return 页面对象
      */
     PageBean<Route> pageQuery(int cid, int currentPage, int pageSize, String rname);
 
     /**
      * 根据id查询：查看详情功能
      *
-     * @param rid
-     * @return
+     * @param rid 路线 id
+     * @return 路线对象
      */
     Route findOne(String rid);
 }
