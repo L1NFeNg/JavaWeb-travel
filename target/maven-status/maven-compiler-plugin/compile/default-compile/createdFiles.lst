@@ -11,8 +11,12 @@ cn\itcast\travel\web\servlet\UserServlet.class
 cn\itcast\travel\web\servlet\RouteServlet.class
 cn\itcast\travel\domain\PageBean.class
 cn\itcast\travel\dao\RouteDao.class
+cn\itcast\travel\dao\SellerDao.class
+cn\itcast\travel\dao\impl\SellerDaoImpl.class
 cn\itcast\travel\web\filter\CharchaterFilter.class
 cn\itcast\travel\dao\impl\CategoryDaoImpl.class
 cn\itcast\travel\service\CategoryService.class
+cn\itcast\travel\dao\RouteImgDao.class
+cn\itcast\travel\dao\impl\RouteImgDaoImpl.class
 cn\itcast\travel\service\impl\UserServiceImpl.class
 cn\itcast\travel\dao\impl\RouteDaoImpl.class

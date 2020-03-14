@@ -42,6 +42,7 @@ public class UserDaoImpl implements UserDao {
 
     /**
      * 根据激活码查询用户对象
+     *
      * @param code
      * @return
      */
@@ -59,6 +60,7 @@ public class UserDaoImpl implements UserDao {
 
     /**
      * 修改指定用户激活状态
+     *
      * @param user
      */
     @Override
@@ -69,6 +71,7 @@ public class UserDaoImpl implements UserDao {
 
     /**
      * 根据用户名和密码查询的方法
+     *
      * @param username
      * @param password
      * @return
